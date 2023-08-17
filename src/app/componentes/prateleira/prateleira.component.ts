@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CarrinhoService } from '../carrinho.service';
 import { Produtos } from 'src/app/produtos';
 @Component({
@@ -25,8 +25,9 @@ export class PrateleiraComponent implements OnInit{
         })
       }
     )
-  }
-  mudarAnuncio(){
-    
+  }  
+  
+  mostrarIndice(index: number) {
+    this._carrinhoService.atualizarIndiceProdutoSelecionado(index);
   }
 }

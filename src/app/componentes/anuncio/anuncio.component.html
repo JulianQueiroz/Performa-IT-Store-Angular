@@ -8,20 +8,20 @@
         <li><a href="#">Camisetas</a></li>
     </ul>
     <ul class="product-intro">
-        <li><img [src]= produtos[0].image alt="" class="product-intro-item"></li>
-        <li><img [src]= produtos[0].image alt="" class="product-intro-item"></li>
-        <li><img [src]= produtos[0].image alt="" class="product-intro-item"></li>
-        <li><img [src]= produtos[0].image alt="" class="product-intro-item"></li>
+        <li><img [src]= produtos[indiceProdutoSelecionado].image alt="" class="product-intro-item"></li>
+        <li><img [src]= produtos[indiceProdutoSelecionado].image alt="" class="product-intro-item"></li>
+        <li><img [src]= produtos[indiceProdutoSelecionado].image alt="" class="product-intro-item"></li>
+        <li><img [src]= produtos[indiceProdutoSelecionado].image alt="" class="product-intro-item"></li>
     </ul>
-    <img id="main-ad-tshirt" [src]=produtos[0].image alt="">
+    <img id="main-ad-tshirt" [src]=produtos[indiceProdutoSelecionado].image alt="">
     <aside>
-        <p class="anuncio-principal-titulo">{{produtos[0].name}}</p>
-        <p class="default-text-14px anuncio-principal-ref">REF:<span id="anuncio-principal-id">{{produtos[0].id}}</span> </p>
+        <p class="anuncio-principal-titulo">{{produtos[indiceProdutoSelecionado].name}}</p>
+        <p class="default-text-14px anuncio-principal-ref">REF:<span id="anuncio-principal-id">{{produtos[indiceProdutoSelecionado].id}}</span> </p>
         <div id="price">
-            <p id="preço-de">De R${{produtos[0].oldPrice.toFixed(2)}}</p>
-            <p id="main-price">R${{produtos[0].price.toFixed(2)}}</p>
+            <p id="preço-de">De R${{produtos[indiceProdutoSelecionado].oldPrice.toFixed(2)}}</p>
+            <p id="main-price">R${{produtos[indiceProdutoSelecionado].price.toFixed(2)}}</p>
         </div>
-            <p class="default-text-14px parcelas">{{produtos[0].parcelas}}</p>
+            <p class="default-text-14px parcelas">{{produtos[indiceProdutoSelecionado].parcelas}}</p>
 
         <div id="tamanho">
             <p class="default-text-14px" id="escolher-tamanho">Escolha o Tamanho</p>

@@ -9,7 +9,14 @@ import { Produtos } from 'src/app/produtos';
 })
 export class AnuncioComponent implements OnInit {
   @Input() anuncio: Produtos | null = null;
-  constructor(private _carrinhoService: CarrinhoService){}
+  indiceProdutoSelecionado: number = 0;
+
+  constructor(private _carrinhoService: CarrinhoService){
+    this._carrinhoService.indiceProdutoSelecionado$.subscribe((indice) => {
+      this.indiceProdutoSelecionado = indice;
+    });
+
+  }
   public produtos:Produtos[]=[]
   ngOnInit(){
     this._carrinhoService.getProdutos()

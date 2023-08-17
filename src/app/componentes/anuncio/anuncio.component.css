@@ -154,3 +154,7 @@ white-space: nowrap;
     margin-top: 16px;
     margin-bottom: 19px;
 }
+.product-intro-item{
+    width: 100px;
+    height: 100px;
+}

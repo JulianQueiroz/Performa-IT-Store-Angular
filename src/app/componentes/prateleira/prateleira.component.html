@@ -5,10 +5,10 @@
 <section class="prateleira">
     <ul class="prateleira-lista" *ngFor="let produto of produtos; let i=index">
         <li class="prateleira-item" *ngIf="i>0">
-            <img [src]=produto.image alt="" class="prateleira-image-item" (click)="mudarAnuncio()">
+            <img [src]=produto.image alt="" class="prateleira-image-item" (click)="mostrarIndice(i)">
             <p class="prateleira-titulo-anuncio">{{produto.name}}<span class="prateleira-id">{{produto.id}}</span></p>
             <div class="prateleira-preços">
-             <p class="prateleira-hashed-preço">R${{produtos[0].oldPrice.toFixed(2)}}</p>
+             <p class="prateleira-hashed-preço">R${{produto.oldPrice.toFixed(2)}}</p>
              <p class="prateleira-preço">R${{produto.price.toFixed(2)}}</p>
             </div>
             <p class="prateleira-parcelas">
