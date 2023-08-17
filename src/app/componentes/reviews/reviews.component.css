@@ -1,0 +1,117 @@
+#reviews {
+    display: flex;
+    width: 100%;
+}
+#avaliação-estrelas{ 
+    margin-right: 17px;
+}
+#reviews-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 98px;
+    margin-bottom: 40px;
+}
+#sobre-este-produto{
+    font-weight: bold;
+}
+#avaliações-duvidas-section{
+    display: flex;
+    justify-content: center;
+}
+#avaliações{
+    display: grid;
+    width: 591px;
+    height: 756px;
+    justify-content: center;
+}
+.text-from-reviews-section{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+#average-reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#average-stars{
+    display: flex;
+    justify-content: center;
+    margin-right: 6px;
+}
+.line-from-reviews{
+    width: 591px;
+    height: 1px;
+    background-color: #D2D2D2;
+}
+.avaliação-comentario-recomendação{
+    display: flex;
+}
+.nome-compra-section{
+    display: grid;
+    margin-right: 30px;
+}
+.nome-cliente{
+    white-space: nowrap;
+    font-weight: bold;
+}
+.compra-verificada{
+    white-space: nowrap;
+}
+.stars-review-recomendation-lorem-section{
+    display: grid;
+}
+#centralizar-paginaçao-avaliar-button{
+    display: grid;
+    justify-content: center;
+}
+#avaliar-button{
+    width: 180px;
+    height: 32px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    cursor: pointer;
+}
+#vertical-main-line {
+    border-left: 1px solid #D2D2D2;
+    height: 707px;
+    margin: 0 68px;
+}
+#doubts-section{
+    display: grid;
+    width: 591px;
+    height: 741px;
+}
+#centralize-button{
+    display: flex;
+    justify-content: center;
+}
+#duvidas-title-and-text{
+    display: grid;
+    justify-content: center;
+}
+#doubt-text-area{
+    width: 591px;
+    height: 68px;
+    background-color: #F2F2F2;
+    border: 2px solid #D2D2D2;
+}
+#centralize-button{
+    display: flex;
+    justify-content: center;
+
+}
+#perguntar-button{
+    width: 180px;
+    height: 32px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    cursor: pointer;
+}
+#loja{
+    font-weight: bold;
+}
+.minor-line{
+    border-left: 1px solid black;
+    height: 32px;
+}

@@ -1,0 +1,52 @@
+{
+    "produtos":[
+        {
+        "id": 104893,
+        "image": "assets/img/camisa-lista.png",
+        "name": "t-shirt jumping bear vermelho",
+        "oldPrice": 499.00,
+        "price": 399.90,
+        "parcelas": "ou 3x de 133,90"
+        },
+        {
+        "id": 104894,
+        "image": "assets/img/camiseta1-prateleira.png",
+        "name": "t-shirt jumping bear verde",
+        "oldPrice": 299.00,
+        "price":  129.90,
+        "parcelas": "ou 3x de R$ 43,30"
+        },
+        {
+        "id": 104895,
+        "image": "assets/img/camiseta2-prateleira.png",
+        "name": "calça moletom bear",
+        "oldPrice": 299.00,
+        "price":  299.90,
+        "parcelas": "ou 3x de R$ 99,96"
+        },
+        {
+        "id": 104896,
+        "image": "assets/img/camiseta3-prateleira.png",
+        "name": "t-shirt jumping bear cinza",
+        "oldPrice": 299.00,
+        "price":  269.90,
+        "parcelas": "ou 3x de R$ 89,96"
+        },
+        {
+        "id": 104897,
+        "image": "assets/img/camiseta4-prateleira.png",
+        "name": "t-shirt jumping bear branca",
+        "oldPrice": 299.00,
+        "price":  199.90,
+        "parcelas": "ou 3x de R$ 66,63"
+        },
+        {
+        "id": 104898,
+        "image": "assets/img/camiseta5-prateleira.png",
+        "name": "casaco jumping bear azul",
+        "oldPrice": 299.00,
+        "price":  469.90,
+        "parcelas": "ou 3x de R$ 159,96"
+        }
+    ]
+}

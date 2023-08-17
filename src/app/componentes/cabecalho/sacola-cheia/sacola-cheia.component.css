@@ -1,0 +1,85 @@
+.sacola-cheia{
+    position: absolute;
+    border: 1px solid black;
+    height: 50%;
+    width: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.produto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+.produto-info{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.precos{
+    display: flex;
+}
+.produto-quantidade{
+    display: flex;
+    align-items: center;
+}
+.imagem-sacola-cheia{
+    height: 72px;
+    width: 72px;
+}
+.produto-numero-quantidade{
+    margin: 0 15px;
+}
+.trash-icon{
+    height: 24px;
+    width: 24px;
+}
+.minus-icon{
+    height: 3px;
+    width: 20px;
+}
+.produto-titulo{
+    text-transform: uppercase;
+}
+.produto-preco-antigo{
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.produto-preco{
+    font-weight: 700;
+
+}
+.hr-produtos-sacola{
+    width: 90%;
+    border: 1px solid #D2D2D2
+}
+.continuar-comprando-button,.finalizar-button{
+    width: 296px;
+    height: 32px;
+    text-transform: uppercase;
+}
+.continuar-comprando-button{
+color: black;
+background-color: white;
+margin-bottom: 8px;
+}
+.finalizar-button{
+    background-color: black;
+    color: white;
+}
+.subtotal-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.botoes-info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subtotal-valor{
+    font-weight: 700;
+}

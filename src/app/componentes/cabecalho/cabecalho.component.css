@@ -1,0 +1,62 @@
+
+#aviso-frete {
+    background-color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    justify-content:center ;
+
+}
+#aviso-frete-texto {
+    color: #FFFFFF;
+}
+#preço-acima {
+    font-weight: bold;
+}
+header {
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 188px;
+    height: 42px;
+    left: 32px;
+    top: 43px;
+
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* margin-bottom: 19px; */
+}
+ul {
+    list-style: none;
+}
+.menu {
+    display: flex;
+}
+#menu-item {
+    margin-right: 32px;
+}
+#search-box {
+    margin-left: 225px;
+    width: 264px;
+    height: 32px;
+    background-color: #F2F2F2;
+    border: 0;
+
+}
+#user-icon {
+    margin-right: 29px;
+}
+hr {
+    border: 1px solid #D2D2D2;
+}
+#nav-line {
+    margin: 19px;
+}

@@ -1,0 +1,27 @@
+<div id="aviso-frete"> <p id="aviso-frete-texto"> FRETE GRÁTIS ACIMA DE <span id="preço-acima">R$ 199</span></p></div>
+<header>
+    <img src="assets/img/logo.png" alt="logo da Performa_IT" id="logo">
+    <nav id="navbar">
+        <ul class="menu">
+            <li id="menu-item">ROUPAS</li>
+            <li id="menu-item">SAPATOS</li>
+            <li id="menu-item">ACESSÓRIOS</li>
+            <li id="menu-item">CASA E CUIDADO</li>
+            <li id="menu-item">BAZAR</li>
+        </ul>
+        <form action="/pesquisar" method="get" class="search-form">
+            <div class="search-box">
+            <input type="text" name="q" placeholder="Digite sua pesquisa aqui..." id="search-box">
+            <span class="search-icon"></span>
+            </div>
+        </form>
+        <ul class="menu" id="user">
+            <li><img src="assets/img/user-icon.png" alt="ícone de usuário" id="user-icon"></li>
+            <li><img src="assets/img/cart-icon.png" alt="ícone de carrinho" id="carrinho-icon"></li>
+        </ul>
+        <!-- <app-sacola-vazia *ngIf="_carrinhoService.mostrarCarrinho" class="flutuante"></app-sacola-vazia> -->
+        <app-sacola-cheia *ngIf="_carrinhoService.mostrarCarrinho" class="flutuante"></app-sacola-cheia>
+        
+    </nav>
+</header>
+<hr id="nav-line">

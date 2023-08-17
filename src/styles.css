@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    margin:0;
+    font-family: 'Source Sans Pro'; 
+}
+ul {
+    list-style: none;
+}
+.default-text-14px {
+    font-size: 14px;
+}

@@ -1,0 +1,55 @@
+footer{
+    margin-top: 13em;
+    display: grid;
+}
+#footer-menu{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+.footer-list-titles{
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+#email{
+    width: 240px;
+    height: 32px;
+    border: 0;
+}
+#enviar{
+    width: 88px;
+    height: 37.7px;
+    background-color: black;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+}
+#redes-sociais{
+    display: flex;
+    padding: 0;
+    margin-top: 18px;
+}
+.redes-sociais-icons{
+    margin-right: 26.5px;
+}
+#security{
+    display: flex;
+    padding: 0;
+}
+.security-icons{
+    margin-right: 16px;
+}
+#endereço-footer{
+    background-color: black;
+    color: white;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+#endereço{
+    font-weight: bold;
+}

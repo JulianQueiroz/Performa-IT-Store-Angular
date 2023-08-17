@@ -1,0 +1,22 @@
+.header-sacolas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 15px;
+}
+.icone-texto{
+    display: flex;
+    align-items: center;
+}
+.minha-sacola-texto{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+hr{
+    border: 1px solid #EBEBEB;
+    width: 95%;
+}
+.icone-fechar{
+    height: 20px;
+    width: 20px;
+}

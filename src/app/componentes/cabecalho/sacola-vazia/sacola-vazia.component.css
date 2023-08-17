@@ -1,0 +1,34 @@
+.sacola-vazia{
+position: absolute;
+border: 1px solid black;
+height: 50%;
+}
+.corpo-sacola-vazia{
+    display: flex;
+    flex-direction: column;
+    margin: 10em 3em 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-sacola-vazia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itens-lista-sacola-vazia{
+flex-wrap: nowrap;
+
+}
+.subtitle{
+    white-space: nowrap;
+    margin: 0 auto;
+}
+button{
+    width: 296px;
+    height: 32px;
+    border: 1px solid;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    margin-top: 1em;
+}

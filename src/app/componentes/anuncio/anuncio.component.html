@@ -1,0 +1,81 @@
+
+<article>
+    <ul id="breadcrumb-list">
+        <li id="breadcrumb"><a href="#">Home</a></li>
+        <li id="breadcrumb"> &gt; </li>
+        <li id="breadcrumb"><a href="#">Roupas</a></li>
+        <li id="breadcrumb"> &gt; </li>
+        <li><a href="#">Camisetas</a></li>
+    </ul>
+    <ul class="product-intro">
+        <li><img [src]= produtos[0].image alt="" class="product-intro-item"></li>
+        <li><img [src]= produtos[0].image alt="" class="product-intro-item"></li>
+        <li><img [src]= produtos[0].image alt="" class="product-intro-item"></li>
+        <li><img [src]= produtos[0].image alt="" class="product-intro-item"></li>
+    </ul>
+    <img id="main-ad-tshirt" [src]=produtos[0].image alt="">
+    <aside>
+        <p class="anuncio-principal-titulo">{{produtos[0].name}}</p>
+        <p class="default-text-14px anuncio-principal-ref">REF:<span id="anuncio-principal-id">{{produtos[0].id}}</span> </p>
+        <div id="price">
+            <p id="preço-de">De R${{produtos[0].oldPrice.toFixed(2)}}</p>
+            <p id="main-price">R${{produtos[0].price.toFixed(2)}}</p>
+        </div>
+            <p class="default-text-14px parcelas">{{produtos[0].parcelas}}</p>
+
+        <div id="tamanho">
+            <p class="default-text-14px" id="escolher-tamanho">Escolha o Tamanho</p>
+            <p class="default-text-14px" id="guia-medidas">Guia de Medidas</p>
+        </div>
+        <form>
+            <label for="size"></label>
+            <br>
+            <button type="button" name="size" value="P" class="sizes" (click)="mudarCorBotaoMedida('P')">P</button>
+            <button type="button" name="size" value="M" class="sizes" (click)="mudarCorBotaoMedida('M')">M</button>
+            <button type="button" name="size" value="G" class="sizes" (click)="mudarCorBotaoMedida('G')">G</button>
+            <button type="button" name="size" value="GG" class="sizes" (click)="mudarCorBotaoMedida('GG')">GG</button>
+            <button type="button" name="size" value="EG" class="sizes" (click)="mudarCorBotaoMedida('EG')" id="size-eg">EG</button>
+            
+            <div class="default-text-14px">
+                <p>Escolha a cor</p>
+            </div>
+
+            <label for="color"></label>
+            <button type="button" name="color" value="preto" style="background-color:#000000 ;" class="color"  (click)="mudarBotaoCor('preto')" id="preto">-</button>
+            <button type="button" name="color" value="amarelo" style="background-color:#E3C109;" class="color"  (click)="mudarBotaoCor('amarelo')" id="amarelo">-</button>
+            <button type="button" name="color" value="vermelho" style="background-color:#C72E2E;"  class="color"  (click)="mudarBotaoCor('vermelho')" id="vermelho">-</button>
+            <button type="button" name="color" value="azul" style="background-color:#4176AB ;" class="color"  (click)="mudarBotaoCor('azul')" id="azul">-</button>
+            <button type="button" name="color" value="azul-claro" style="background-color:#B2D4E5;" class="color"  (click)="mudarBotaoCor('azul-claro')" id="azul claro">-</button>
+            <button type="button" name="color" value="verde" style="background-color:#99C76B;" class="color"  (click)="mudarBotaoCor('verde')" id="verde">-</button>
+            <button type="button" name="color" value="bege" style="background-color:#EC7646;" class="color"  (click)="mudarBotaoCor('bege')" id="bege">-</button>
+            <button type="button" name="color" value="bege-escuro" style="background-color:#BE5230;" class="color"  (click)="mudarBotaoCor('bege-escuro')" id="bege escuro">-</button>
+            <button type="button" name="color" value="marrom" style="background-color:#731A26;" class="color"  (click)="mudarBotaoCor('marrom')" id="marrom">-</button>
+            <input type="button" value="COMPRAR" class="default-text-14px" id="comprar-button" (click)="comprarProduto()">
+        </form>
+
+        <form>
+            <label for="cep" class="default-text-14px">Calcule o valor do frete</label>
+            <br>
+            <div id="cep-section">
+                <input type="text" id="cep-text-area">
+                <input type="button" value="OK" id="ok-button">
+            </div>
+        </form>
+        <p id="cep-text">Não sei o meu cep</p>
+        <form>
+            <label for="ok-button"></label>
+            <br>
+        </form>
+        <hr class="aside-line">
+        <section id="description-details">
+            <p class="default-text-14px" id="description-text">DESCRIÇÃO E DETALHES</p>
+            <div id="more-details"><img src="assets/img/icon-soma.png" alt=""></div>
+        </section>
+        <hr id="aside-line-1">
+        <section id="reviews">
+            <div id="avaliação-estrelas"><img src="assets/img/avaliacao.png" alt="estrelas de avaliação"></div>
+            <p id="amount-reviews" class="default-text-14px">30 avaliações</p>
+        </section>
+        <hr id="aside-line-2">
+    </aside>
+</article>
