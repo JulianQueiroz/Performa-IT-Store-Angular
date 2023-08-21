@@ -1,29 +1,31 @@
+<app-cabecalho-sacolas></app-cabecalho-sacolas>
 <main class="sacola-cheia flutuante">
-    <div class="main-produto" *ngFor="let produto of itensNoCarrinho">
-        <app-cabecalho-sacolas></app-cabecalho-sacolas>
-        <div class="produto">
-            <img class="imagem-sacola-cheia" [src]="produto.image" alt="">
-            <div class="produto-info">
-                <p class="produto-titulo">{{produto.name}}</p>
-                <div class="precos">
-                    <span class="produto-preco-antigo">R${{produto.oldPrice.toFixed(2)}}</span>
-                    <span class="produto-preco">R${{produto.price.toFixed(2)}}</span>    
+    <div class="sacola-overlay">
+        <div class="main-produto" *ngFor="let produto of itensNoCarrinho">
+            <div class="produto">
+                <img class="imagem-sacola-cheia" [src]="produto.image" alt="">
+                <div class="produto-info">
+                    <p class="produto-titulo">{{produto.name}}</p>
+                    <div class="precos">
+                        <span class="produto-preco-antigo">R${{produto.oldPrice.toFixed(2)}}</span>
+                        <span class="produto-preco">R${{produto.price.toFixed(2)}}</span>    
+                    </div>
+                    <div class="produto-quantidade">
+                        <img src="assets/img/minus.png" class="minus-icon" alt="">
+                        <span class="produto-numero-quantidade">0</span>
+                        <img src="assets/img/plus.png" alt="">
+                    </div>
                 </div>
-                <div class="produto-quantidade">
-                    <img src="assets/img/minus.png" class="minus-icon" alt="">
-                    <span class="produto-numero-quantidade">0</span>
-                    <img src="assets/img/plus.png" alt="">
-                </div>
-            </div>
-            <img src="assets/img/trash.png" class="trash-icon" alt="">
-        </div>    
-        <hr class="hr-produtos-sacola">
+                <img src="assets/img/trash.png" class="trash-icon" alt="">
+            </div>    
+            <hr class="hr-produtos-sacola">
+        </div>
     </div>
 
     <section class="finalizacao">
         <div class="subtotal-info">
             <span class="subtotal-texto">Subtotal:</span>
-            <span class="subtotal-valor">R$</span>
+            <span class="subtotal-valor">R${{calcularSubtotal().toFixed(2)}}</span>
         </div>
         <div class="botoes-info-section">
             <span class="frete-desconto-texto">Frete, e descontos calculados no carrinho</span>

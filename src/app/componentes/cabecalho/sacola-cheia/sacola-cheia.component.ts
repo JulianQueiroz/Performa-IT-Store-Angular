@@ -27,7 +27,13 @@ export class SacolaCheiaComponent{
       }
     )
     this.itensNoCarrinho = this._carrinhoService.itensNoCarrinho;
+  } 
+  calcularSubtotal(){
+    let subtotal = 0
+    for(const produto of this.itensNoCarrinho){
+      subtotal += produto.price
+    }
+    return subtotal
   }
-  
 }
 
