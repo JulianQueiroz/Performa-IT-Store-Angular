@@ -29,7 +29,8 @@ export class AnuncioComponent implements OnInit {
             item.name,
             item.oldPrice,
             item.price,
-            item.parcelas
+            item.parcelas,
+            item.quantidade
           )
         })
       }
@@ -69,10 +70,17 @@ export class AnuncioComponent implements OnInit {
   comprarProduto(){
     if(this.corSelecionada && this.medidaSelecionada){
       const itemParaCarrinho = { ...this.produtos[this.indiceProdutoSelecionado] };
-
-      this._carrinhoService.adicionarAoCarrinho(itemParaCarrinho);
-
-      this._carrinhoService.mostrarCarrinho = true
+      
+      const itemNaSacola = this._carrinhoService.getItemNaSacola(itemParaCarrinho.id);
+  
+      if (itemNaSacola) {
+        itemNaSacola.quantidade += 1;
+      } else {
+        itemParaCarrinho.quantidade = 1;
+        this._carrinhoService.adicionarAoCarrinho(itemParaCarrinho);
+      }
+      this._carrinhoService.mostrarCarrinho = true;
     }
   }
+  
 }

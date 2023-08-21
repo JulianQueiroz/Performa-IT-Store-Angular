@@ -17,14 +17,26 @@ export class CarrinhoService {
   }
   indiceProdutoSelecionadoSource = new BehaviorSubject<number>(0);
   indiceProdutoSelecionado$ = this.indiceProdutoSelecionadoSource.asObservable();
-
+  
   atualizarIndiceProdutoSelecionado(index: number) {
     this.indiceProdutoSelecionadoSource.next(index);
   }
   
-  itensNoCarrinho: any[] = []; 
+  itensNoCarrinho: Produtos[] = []; 
+
 
   adicionarAoCarrinho(item: any) {
     this.itensNoCarrinho.push(item);
   }
+  getItemNaSacola(id: number): Produtos | undefined {
+    return this.itensNoCarrinho.find(item => item.id === id);
+  }  
+
+  removerItem(produto: Produtos) {
+    const index = this.itensNoCarrinho.indexOf(produto);
+    if (index !== -1) {
+      this.itensNoCarrinho.splice(index, 1);
+    }
+  }
+
 }

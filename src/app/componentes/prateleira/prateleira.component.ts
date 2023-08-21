@@ -20,7 +20,8 @@ export class PrateleiraComponent implements OnInit{
             item.name,
             item.oldPrice,
             item.price,
-            item.parcelas
+            item.parcelas,
+            item.quantidade
           )
         })
       }

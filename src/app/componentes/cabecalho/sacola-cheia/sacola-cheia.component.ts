@@ -21,7 +21,8 @@ export class SacolaCheiaComponent{
             item.name,
             item.oldPrice,
             item.price,
-            item.parcelas
+            item.parcelas,
+            item.quantidade
           )
         })
       }
@@ -31,9 +32,22 @@ export class SacolaCheiaComponent{
   calcularSubtotal(){
     let subtotal = 0
     for(const produto of this.itensNoCarrinho){
-      subtotal += produto.price
+      subtotal += produto.price * produto.quantidade
     }
     return subtotal
   }
-}
 
+  manipularQuantidade(produto: Produtos, quantidadeAlteracao: number) {
+    if (quantidadeAlteracao === 1) {
+      produto.quantidade += 1;
+    } else if (quantidadeAlteracao === -1 && produto.quantidade > 1) {
+      produto.quantidade -= 1;
+    } else if(quantidadeAlteracao === -1 && produto.quantidade === 1){
+      this._carrinhoService.removerItem(produto)
+    }
+  }
+
+  removerProduto(produto: Produtos) {
+    this._carrinhoService.removerItem(produto);
+  }
+}

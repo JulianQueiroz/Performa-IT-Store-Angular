@@ -11,12 +11,12 @@
                         <span class="produto-preco">R${{produto.price.toFixed(2)}}</span>    
                     </div>
                     <div class="produto-quantidade">
-                        <img src="assets/img/minus.png" class="minus-icon" alt="">
-                        <span class="produto-numero-quantidade">0</span>
-                        <img src="assets/img/plus.png" alt="">
+                        <img src="assets/img/minus.png" class="minus-icon" alt="" (click)="manipularQuantidade(produto,-1)">
+                        <span class="produto-numero-quantidade">{{produto.quantidade}}</span>
+                        <img src="assets/img/plus.png" class="plus-icon" alt="" (click)="manipularQuantidade(produto, +1)">
                     </div>
                 </div>
-                <img src="assets/img/trash.png" class="trash-icon" alt="">
+                <img src="assets/img/trash.png" class="trash-icon" alt="" (click)="removerProduto(produto)">
             </div>    
             <hr class="hr-produtos-sacola">
         </div>
