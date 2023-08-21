@@ -21,5 +21,10 @@ export class CarrinhoService {
   atualizarIndiceProdutoSelecionado(index: number) {
     this.indiceProdutoSelecionadoSource.next(index);
   }
+  
+  itensNoCarrinho: any[] = []; 
 
+  adicionarAoCarrinho(item: any) {
+    this.itensNoCarrinho.push(item);
+  }
 }

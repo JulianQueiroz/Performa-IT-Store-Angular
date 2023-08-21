@@ -68,6 +68,10 @@ export class AnuncioComponent implements OnInit {
 
   comprarProduto(){
     if(this.corSelecionada && this.medidaSelecionada){
+      const itemParaCarrinho = { ...this.produtos[this.indiceProdutoSelecionado] };
+
+      this._carrinhoService.adicionarAoCarrinho(itemParaCarrinho);
+
       this._carrinhoService.mostrarCarrinho = true
     }
   }

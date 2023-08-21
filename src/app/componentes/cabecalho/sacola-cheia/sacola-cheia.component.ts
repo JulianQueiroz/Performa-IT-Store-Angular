@@ -7,6 +7,7 @@ import { Produtos } from 'src/app/produtos';
   styleUrls: ['./sacola-cheia.component.css']
 })
 export class SacolaCheiaComponent{
+  itensNoCarrinho: any[] = [];
   constructor(private _carrinhoService: CarrinhoService){}
   public produtos:Produtos[]=[]
   ngOnInit(){
@@ -25,6 +26,7 @@ export class SacolaCheiaComponent{
         })
       }
     )
+    this.itensNoCarrinho = this._carrinhoService.itensNoCarrinho;
   }
   
 }
